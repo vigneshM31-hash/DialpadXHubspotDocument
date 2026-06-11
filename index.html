@@ -1,32 +1,360 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dialpad for HubSpot CRM by Sandeza</title>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dialpad for HubSpot CRM | Sandeza</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#1f2937;
+}
+
+header{
+    background:linear-gradient(135deg,#0ea5e9,#2563eb);
+    color:white;
+    padding:80px 10%;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.hero-text{
+    max-width:650px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    border-radius:8px;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.2rem;
+    margin-bottom:50px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#2563eb;
+}
+
+.architecture{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.architecture pre{
+    overflow:auto;
+    font-size:18px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.gallery-item{
+    background:white;
+    padding:15px;
+    border-radius:15px;
+}
+
+.gallery-item h3{
+    margin-top:15px;
+}
+
+.workflow{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.step{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+ul{
+    margin-left:20px;
+    line-height:2;
+}
+</style>
 </head>
+
 <body>
-    <h1>Dialpad for HubSpot CRM by Sandeza</h1>
 
-    <h2>Overview</h2>
-    <p>
-        Dialpad for HubSpot CRM is a CTI integration that allows users
-        to make calls directly from HubSpot, synchronize contacts,
-        and manage customer interactions without leaving the CRM.
-    </p>
+<header>
+<div class="hero">
+<div class="hero-text">
+<h1>Dialpad for HubSpot CRM</h1>
 
-    <h2>Features</h2>
-    <ul>
-        <li>Click-to-Call</li>
-        <li>HubSpot Contact Sync</li>
-        <li>Dialpad Softphone</li>
-        <li>OAuth Authentication</li>
-        <li>Call Activity Tracking</li>
-        <li>CRM Dashboard</li>
-    </ul>
+<p>
+Dialpad for HubSpot CRM by Sandeza brings cloud telephony directly into HubSpot.
+Users can make calls, search CRM contacts, manage customer interactions,
+view call context, and synchronize contact information without leaving HubSpot.
+</p>
 
-    <h2>Documentation</h2>
-    <p>
-        More documentation coming soon.
-    </p>
+<a href="#screenshots" class="btn">View Screenshots</a>
+</div>
+</div>
+</header>
+
+<section>
+<h2 class="section-title">Overview</h2>
+
+<p style="font-size:18px;line-height:1.8">
+The integration embeds the Dialpad softphone directly within HubSpot CRM,
+allowing sales and support teams to access calling features while working
+inside their CRM workflow. The application uses HubSpot OAuth authentication,
+Dialpad APIs, AWS Lambda services, and real-time contact synchronization
+to deliver a seamless communication experience.
+</p>
+</section>
+
+<section>
+<h2 class="section-title">Key Features</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>☎ Embedded Softphone</h3>
+<p>Make and manage calls directly from HubSpot without switching applications.</p>
+</div>
+
+<div class="card">
+<h3>👤 Contact Synchronization</h3>
+<p>Sync HubSpot contacts and instantly access customer information.</p>
+</div>
+
+<div class="card">
+<h3>🔍 Smart Search</h3>
+<p>Search contacts by name or phone number directly from the Dialpad widget.</p>
+</div>
+
+<div class="card">
+<h3>🔐 OAuth Authentication</h3>
+<p>Secure HubSpot OAuth integration with token management and account switching.</p>
+</div>
+
+<div class="card">
+<h3>📞 Active Call Experience</h3>
+<p>Display customer information and CRM records during live conversations.</p>
+</div>
+
+<div class="card">
+<h3>📊 CRM Dashboard</h3>
+<p>Access customer information, tickets, and CRM data from a unified dashboard.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Installation Workflow</h2>
+
+<div class="workflow">
+
+<div class="step">
+<h3>Step 1</h3>
+<p>Install the Dialpad application inside HubSpot CRM.</p>
+</div>
+
+<div class="step">
+<h3>Step 2</h3>
+<p>Configure Dialpad credentials and environment settings.</p>
+</div>
+
+<div class="step">
+<h3>Step 3</h3>
+<p>Connect HubSpot using OAuth authorization.</p>
+</div>
+
+<div class="step">
+<h3>Step 4</h3>
+<p>Select Dialpad Agent and configure CRM settings.</p>
+</div>
+
+<div class="step">
+<h3>Step 5</h3>
+<p>Synchronize contacts and start making calls.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Architecture</h2>
+
+<div class="architecture">
+<pre>
+HubSpot CRM
+      │
+      ▼
+Dialpad Widget (React + TypeScript)
+      │
+      ▼
+AWS API Gateway
+      │
+      ▼
+AWS Lambda
+      │
+ ┌────┴────┐
+ ▼         ▼
+Dialpad    HubSpot
+API         API
+</pre>
+</div>
+</section>
+
+<section id="screenshots">
+
+<h2 class="section-title">Application Screenshots</h2>
+
+<div class="gallery">
+
+<div class="gallery-item">
+<img src="assets/dialpadtab.png">
+<h3>Dialpad Softphone</h3>
+<p>Recent calls, favorites, contacts, and outbound calling controls.</p>
+</div>
+
+<div class="gallery-item">
+<img src="assets/installationparams.png">
+<h3>Configuration Screen</h3>
+<p>Dialpad credentials, agent selection, and application settings.</p>
+</div>
+
+<div class="gallery-item">
+<img src="assets/portalconnect.png">
+<h3>HubSpot OAuth Connection</h3>
+<p>Secure OAuth connection and CRM integration setup.</p>
+</div>
+
+<div class="gallery-item">
+<img src="assets/contacts.png">
+<h3>CRM Dashboard</h3>
+<p>Search contacts, synchronize records, and launch calls.</p>
+</div>
+
+<div class="gallery-item">
+<img src="assets/oncall.png">
+<h3>Active Call Screen</h3>
+<p>View customer information and manage calls in real time.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Technology Stack</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>Frontend</h3>
+<ul>
+<li>React</li>
+<li>TypeScript</li>
+<li>HubSpot CRM Extension SDK</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Backend</h3>
+<ul>
+<li>AWS Lambda</li>
+<li>API Gateway</li>
+<li>Serverless Framework</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Integrations</h3>
+<ul>
+<li>Dialpad API</li>
+<li>HubSpot API</li>
+<li>OAuth 2.0</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<h2>Dialpad for HubSpot CRM</h2>
+<p>Built by Sandeza Intelligent Communications</p>
+<p>Cloud Telephony + CRM Integration Platform</p>
+</footer>
+
 </body>
 </html>
